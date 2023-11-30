@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BananaPrefab : MonoBehaviour
 {
-    public GameObject bananapref;
     public CapsuleCollider2D capsulecolli;
 
     // Start is called before the first frame update
@@ -27,7 +26,7 @@ public class BananaPrefab : MonoBehaviour
         if (other.tag == "Enemigo")
         {
             Debug.Log("Toqué al enemigo");
-            Object.Destroy(bananapref);
+            Destroy(gameObject);
             //capsulecolli del enemigo
             capsulecolli.isTrigger = true;
             //desactivar cono de deteccion

@@ -171,4 +171,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911571008984619458d8d5ccb0fd95b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bananapreb: {fileID: 7954246269974554825}
+  bananapref: {fileID: 0}
+  capsulecolli: {fileID: 0}
