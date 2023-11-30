@@ -233,6 +233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagEnemigo: Enemigo
+  capsulecolliderenemy: {fileID: 2161917720731816075}
+  cono: {fileID: 7285048720868495359}
 --- !u!1 &7285048720868495359
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,9 @@ public class KillPlayer : MonoBehaviour
 {
     public string tagEnemigo = "Enemigo";
     GameObject player;
-
+    public Collider2D capsulecolliderenemy;
+    public GameObject cono;
+    public Animator animenemy;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -23,6 +25,15 @@ public class KillPlayer : MonoBehaviour
         
 
         }
+    }
+
+    public void OnBanana()
+
+    {
+        capsulecolliderenemy.isTrigger = true;
+        cono.SetActive(false);
+        // animenemy.SetTrigger("ANIMACION DE ENEMIGO");
+
     }
 
 
