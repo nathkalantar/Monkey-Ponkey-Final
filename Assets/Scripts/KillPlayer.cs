@@ -9,7 +9,9 @@ public class KillPlayer : MonoBehaviour
     GameObject player;
     public Collider2D capsulecolliderenemy;
     public GameObject cono;
-    public Animator animenemy;
+    public EnemyPatrol patrolcito;
+
+    //public Animator animenemy;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -31,7 +33,10 @@ public class KillPlayer : MonoBehaviour
 
     {
         capsulecolliderenemy.isTrigger = true;
+        if (cono != null)
         cono.SetActive(false);
+        if (patrolcito != null)
+        patrolcito.patrullando = false;
         // animenemy.SetTrigger("ANIMACION DE ENEMIGO");
 
     }

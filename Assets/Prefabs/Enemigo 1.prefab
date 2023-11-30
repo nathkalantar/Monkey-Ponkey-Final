@@ -199,6 +199,7 @@ MonoBehaviour:
   pointB: {fileID: 8314107720409369175}
   speed: 2
   distancia: 0
+  patrullando: 1
 --- !u!95 &6865521792956087065
 Animator:
   serializedVersion: 5
@@ -235,6 +236,7 @@ MonoBehaviour:
   tagEnemigo: Enemigo
   capsulecolliderenemy: {fileID: 2161917720731816075}
   cono: {fileID: 7285048720868495359}
+  patrolcito: {fileID: 6105033072363264671}
 --- !u!1 &7285048720868495359
 GameObject:
   m_ObjectHideFlags: 0

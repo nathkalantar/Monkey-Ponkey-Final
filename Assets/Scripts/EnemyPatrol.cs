@@ -11,8 +11,10 @@ public class EnemyPatrol : MonoBehaviour
     private Transform currentPoint;
     public float speed;
     public float distancia;
+    public bool patrullando =true;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -24,6 +26,8 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (patrullando == true)
+        {     
         Vector2 point = currentPoint.position - transform.position;
         if(currentPoint == pointB.transform)
         {
@@ -56,7 +60,12 @@ public class EnemyPatrol : MonoBehaviour
             currentPoint = pointB.transform;
             
         }
+        }
 
+        else
+        {
+            rb.velocity = new Vector2(0, 0);
+        }
 
     }
     private void flip ()
