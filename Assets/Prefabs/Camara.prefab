@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 930930940886904213}
   - component: {fileID: 4682196387846768700}
   - component: {fileID: 7251455096620550585}
+  - component: {fileID: 2750240306218425319}
   m_Layer: 0
   m_Name: Camara
   m_TagString: Enemigo
@@ -286,3 +287,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagEnemigo: Enemigo
+  capsulecolliderenemy: {fileID: 2750240306218425319}
+  cono: {fileID: 480644771403745182}
+  patrolcito: {fileID: 0}
+--- !u!70 &2750240306218425319
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735537526889489879}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.10487366, y: 0.03146255}
+  m_Size: {x: 0.9239502, y: 2.1195242}
+  m_Direction: 0

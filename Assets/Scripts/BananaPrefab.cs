@@ -25,8 +25,10 @@ public class BananaPrefab : MonoBehaviour
         if (other.tag == "Enemigo")
         {
             Debug.Log("Toqué al enemigo");
-            Destroy(gameObject);
             other.GetComponent<KillPlayer>().OnBanana();
+            if (gameObject != null)
+            Destroy(gameObject);
+            
         }
     }
 }

@@ -121,6 +121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagEnemigo: Enemigo
+  capsulecolliderenemy: {fileID: 4189207488139841195}
+  cono: {fileID: 0}
+  patrolcito: {fileID: 0}
 --- !u!58 &4189207488139841195
 CircleCollider2D:
   m_ObjectHideFlags: 0
