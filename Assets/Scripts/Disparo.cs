@@ -36,11 +36,13 @@ public class Disparo : MonoBehaviour
         {
         if (isActive == true)
             {
+            if (disparo != null)
+            { 
             fuerza = (Input.mousePosition - Camera.main.WorldToScreenPoint(disparo.position)).normalized *speedbanana;
             targetRotation = Input.mousePosition - Camera.main.WorldToScreenPoint(disparo.position);
             float angle = Mathf.Atan2(targetRotation.y, targetRotation.x) * Mathf.Rad2Deg;
 
-            if (angle > 180 || angle < 0)
+        if (angle > 180 || angle < 0)
             {
 
             }
@@ -54,7 +56,8 @@ public class Disparo : MonoBehaviour
             Shoot();
             }
             }
-        }
+            }
+    }
 
 
     /*  if (angle > 90 || angle <-90)

@@ -26,6 +26,7 @@ public class BananaPrefab : MonoBehaviour
         {
             Debug.Log("Toqué al enemigo");
             other.GetComponent<KillPlayer>().OnBanana();
+            if (gameObject != null)
             Destroy(gameObject);
             
         }
